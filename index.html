@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MachineLearningBall</title>
+  <style>
+    :root {
+      font-family: Lexend, "Century Gothic", Futura, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #edf3fa;
+      background: #111722;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #111722;
+    }
+
+    .shell {
+      width: min(860px, calc(100% - 32px));
+      margin: auto;
+      padding: 42px 0 56px;
+    }
+
+    header {
+      border-bottom: 1px solid #3b495d;
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: .95;
+      letter-spacing: -0.05em;
+      font-weight: 950;
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: #afc2d5;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: grid;
+      gap: 14px;
+    }
+
+    .lab {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      align-items: center;
+      gap: 18px;
+      text-decoration: none;
+      color: #edf3fa;
+      background: #1a2536;
+      border: 1px solid #405169;
+      border-radius: 15px;
+      padding: 18px 20px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+
+    .lab:hover,
+    .lab:focus-visible {
+      transform: translateY(-2px);
+      background: #203047;
+      border-color: #91e3c7;
+      outline: none;
+    }
+
+    .num {
+      font-size: 24px;
+      font-weight: 950;
+      color: #91e3c7;
+      letter-spacing: .04em;
+    }
+
+    .title {
+      font-size: clamp(18px, 2.6vw, 23px);
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: right;
+      color: #7f95aa;
+      font-size: 12px;
+    }
+
+    @media (max-width: 560px) {
+      .shell { padding-top: 28px; }
+      .lab {
+        grid-template-columns: 52px 1fr;
+        gap: 12px;
+        padding: 16px;
+      }
+      .num { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <h1>MachineLearningBall</h1>
+      <p class="subtitle">Machine learning labs. Start at 01 and work your way down.</p>
+    </header>
+
+    <section class="links" aria-label="Machine Learning Labs">
+      <a class="lab" href="https://mrrobertpino.github.io/sortball/">
+        <span class="num">01</span>
+        <span class="title">Building a Dataset</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/sortball2/">
+        <span class="num">02</span>
+        <span class="title">Testing and Inspecting a Model</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/sortball3/">
+        <span class="num">03</span>
+        <span class="title">Building a Full Dataset</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/sortball4/">
+        <span class="num">04</span>
+        <span class="title">Examining a Full Naive Bayes Model</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/trainball/">
+        <span class="num">05</span>
+        <span class="title">Intro to Linear Classifiers</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/weightball/">
+        <span class="num">06</span>
+        <span class="title">Linear Classifiers Lab Pt. 1</span>
+      </a>
+
+      <a class="lab" href="https://mrrobertpino.github.io/lineball/">
+        <span class="num">07</span>
+        <span class="title">Linear Classifiers Lab Pt. 2 - Introducing Machine Learning</span>
+      </a>
+    </section>
+
+    <footer>© Robert Pino 2026</footer>
+  </main>
+</body>
+</html>
